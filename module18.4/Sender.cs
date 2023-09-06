@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CliWrap;
 using module18._4.Interfaces;
 
 namespace module18._4
@@ -11,7 +12,8 @@ namespace module18._4
     {
         private ICommand _command;
 
-        public Sender(ICommand command)
+
+        public void SetCommand(ICommand command)
         {
             _command = command;
         }

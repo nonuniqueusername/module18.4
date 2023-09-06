@@ -18,9 +18,7 @@ namespace module18._4.Commands
 
         public void Execute()
         {
-            Console.WriteLine("Введите ссылку для загрузки видео");
-            string videoUrl = Console.ReadLine();
-            _videoDownloader.DownloadVideo(videoUrl);
+            _videoDownloader.DownloadVideo();
         }
     }
 }

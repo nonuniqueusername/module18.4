@@ -18,9 +18,7 @@ namespace module18._4.Commands
         }
         public void Execute()
         {
-            Console.WriteLine("Введите ссылку для получения информации о видео");
-            string videoUrl = Console.ReadLine();
-            _youtubeDownloader.GetVideoInfo(videoUrl);
+            _youtubeDownloader.GetVideoInfo();
         }
     }
 }
